@@ -1,0 +1,50 @@
+#sectionOne {
+    background-image: url(/img/landon-1.jpg);
+
+    .socials {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background-color:$transparent-gray;
+
+            li{
+                padding: 10px 15px;
+                i{
+                    color: #fff;
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+
+    nav {
+        min-height: 100%;
+        background-color:rgba(170,170,170,0.6);
+        width: 25%;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            text-align: center;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 4em;
+        }
+        menu {            
+            min-height: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            ul {
+                min-height: 100%;
+                list-style-type: none;          padding: 0;     
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+#sectionOne {
+  background-image: url(/img/landon-1.jpg); }
+  #sectionOne .socials {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%); }
+    #sectionOne .socials ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      background-color: rgba(170, 170, 170, 0.6); }
+      #sectionOne .socials ul li {
+        padding: 10px 15px; }
+        #sectionOne .socials ul li i {
+          color: #fff;
+          font-size: 3em; }
+  #sectionOne nav {
+    min-height: 100%;
+    background-color: rgba(170, 170, 170, 0.6);
+    width: 25%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #sectionOne nav h1 {
+      text-align: center;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 4em; }
+    #sectionOne nav menu {
+      min-height: 100%;
+      text-align: center;
+      padding: 0;
+      margin: 0; }
+      #sectionOne nav menu ul {
+        min-height: 100%;
+        list-style-type: none;
+        padding: 0; }
+
+#sectionTwo {
+  background-image: url(/img/landon-2.jpg);
+  background-position: center top; }
+  #sectionTwo .container {
+    width: 50%;
+    height: 100%; }
+  #sectionTwo #left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    #sectionTwo #left h1 {
+      color: white;
+      text-align: center; }
+    #sectionTwo #left ul {
+      list-style: none;
+      margin-left: 15%; }
+      #sectionTwo #left ul li {
+        padding: 10px 0; }
+  #sectionTwo #right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(170, 170, 170, 0.6); }
+    #sectionTwo #right img {
+      border-radius: 15px;
+      height: 70%; }
+
+#sectionThree {
+  background-image: url(/img/landon-3.jpg);
+  overflow: hidden; }
+  #sectionThree h1 {
+    color: white;
+    text-align: center; }
+  #sectionThree #table-wrapper {
+    position: relative;
+    height: 75%;
+    overflow-y: scroll;
+    background-color: rgba(170, 170, 170, 0.6);
+    border-radius: 10px; }
+    #sectionThree #table-wrapper table {
+      width: 100%;
+      overflow-y: auto;
+      border-radius: 10px; }
+      #sectionThree #table-wrapper table th {
+        color: white;
+        text-align: center; }
+      #sectionThree #table-wrapper table tr {
+        text-align: center; }
+
+#sectionFour {
+  background-image: url(/img/landon-4.jpg); }
+
+.section {
+  height: 100vh;
+  background-repeat: none;
+  background-size: cover; }
+
+.ui {
+  margin: 0; }
