@@ -9,7 +9,7 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      background-color: rgba(170, 170, 170, 0.6); }
+      background-color: rgba(170, 170, 170, 0.8); }
       #sectionOne .socials ul li {
         padding: 10px 15px; }
         #sectionOne .socials ul li i {
@@ -37,6 +37,46 @@
         list-style-type: none;
         padding: 0; }
 
+@media only screen and (max-width: 768px) {
+  #sectionOne .socials {
+    position: relative;
+    top: 0;
+    transform: translate(0);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 5%; }
+    #sectionOne .socials ul {
+      list-style: none;
+      display: inline;
+      background-color: transparent; }
+      #sectionOne .socials ul li {
+        display: inline; }
+        #sectionOne .socials ul li i {
+          color: black;
+          font-size: 15px; }
+  #sectionOne nav {
+    min-height: 95%;
+    background-color: rgba(170, 170, 170, 0.6);
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #sectionOne nav h1 {
+      text-align: center;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 4em; }
+    #sectionOne nav menu {
+      min-height: 100%;
+      text-align: center;
+      padding: 0;
+      margin: 0; }
+      #sectionOne nav menu ul {
+        min-height: 100%;
+        list-style-type: none;
+        padding: 0; } }
+
 #sectionTwo {
   background-image: url(/img/landon-2.jpg);
   background-position: center top; }
@@ -60,10 +100,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(170, 170, 170, 0.6); }
+    background-color: rgba(170, 170, 170, 0.8); }
     #sectionTwo #right img {
       border-radius: 15px;
       height: 70%; }
+
+@media only screen and (max-width: 768px) {
+  #sectionTwo {
+    margin: 0 !important;
+    height: 175%; }
+    #sectionTwo .container {
+      width: 100%;
+      height: 50%; }
+    #sectionTwo #left {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      #sectionTwo #left h1 {
+        color: white;
+        text-align: center; }
+      #sectionTwo #left ul {
+        list-style: none;
+        margin: 0 auto; }
+        #sectionTwo #left ul li {
+          padding: 10px 0; }
+    #sectionTwo #right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      height: 50%; }
+      #sectionTwo #right img {
+        border-radius: 15px;
+        height: 50%; } }
 
 #sectionThree {
   background-image: url(/img/landon-3.jpg);
@@ -74,8 +144,9 @@
   #sectionThree #table-wrapper {
     position: relative;
     height: 75%;
+    width: 80%;
     overflow-y: scroll;
-    background-color: rgba(170, 170, 170, 0.6);
+    background-color: rgba(170, 170, 170, 0.8);
     border-radius: 10px; }
     #sectionThree #table-wrapper table {
       width: 100%;
@@ -87,8 +158,65 @@
       #sectionThree #table-wrapper table tr {
         text-align: center; }
 
+@media only screen and (max-width: 768px) {
+  #sectionThree {
+    background-image: url(/img/landon-3.jpg);
+    overflow: hidden;
+    margin: 0 !important; }
+    #sectionThree h1 {
+      color: white;
+      text-align: center; }
+    #sectionThree #table-wrapper {
+      position: relative;
+      height: 75%;
+      width: 80%;
+      overflow-y: scroll;
+      background-color: rgba(170, 170, 170, 0.8);
+      border-radius: 10px; }
+      #sectionThree #table-wrapper table {
+        width: 100%;
+        overflow-y: auto;
+        border-radius: 10px; }
+        #sectionThree #table-wrapper table th {
+          color: white;
+          text-align: center; }
+        #sectionThree #table-wrapper table tr {
+          text-align: center; } }
+
 #sectionFour {
-  background-image: url(/img/landon-4.jpg); }
+  background-image: url(/img/landon-6.jpg);
+  background-position: right top;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  #sectionFour h1 {
+    color: white;
+    align-self: flex-start;
+    margin: 0 auto;
+    padding-bottom: 2%; }
+  #sectionFour #about-wrapper {
+    background-color: rgba(170, 170, 170, 0.8);
+    width: 80%;
+    height: 70%;
+    align-self: flex-end;
+    margin-bottom: 5%;
+    padding: 1%;
+    border-radius: 10px; }
+    #sectionFour #about-wrapper #inner-about {
+      overflow-y: scroll;
+      height: 100%; }
+      #sectionFour #about-wrapper #inner-about p {
+        color: white;
+        line-height: 1.8; }
+
+iframe {
+  width: 100%;
+  height: 100%; }
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden; }
 
 .section {
   height: 100vh;
@@ -97,3 +225,6 @@
 
 .ui {
   margin: 0; }
+
+body::-webkit-srollbar {
+  width: 10px; }

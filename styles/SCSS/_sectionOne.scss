@@ -5,16 +5,18 @@
         position: fixed;
         top: 50%;
         transform: translateY(-50%);
-        ul{
+
+        ul {
             list-style: none;
             display: flex;
             flex-direction: column;
             padding: 0;
-            background-color:$transparent-gray;
+            background-color: $transparent-gray;
 
-            li{
+            li {
                 padding: 10px 15px;
-                i{
+
+                i {
                     color: #fff;
                     font-size: 3em;
                 }
@@ -24,26 +26,88 @@
 
     nav {
         min-height: 100%;
-        background-color:rgba(170,170,170,0.6);
+        background-color: rgba(170, 170, 170, 0.6);
         width: 25%;
         float: right;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        h1{
+        h1 {
             text-align: center;
             font-family: 'Permanent Marker', cursive;
             font-size: 4em;
         }
-        menu {            
+
+        menu {
             min-height: 100%;
             text-align: center;
             padding: 0;
             margin: 0;
+
             ul {
                 min-height: 100%;
-                list-style-type: none;          padding: 0;     
+                list-style-type: none;
+                padding: 0;
+            }
+        }
+    }
+}
+
+// media queries
+//  phone
+@media only screen and (max-width:768px) {
+    #sectionOne {
+        .socials {
+            position: relative;
+            top: 0;    
+            transform: translate(0);     
+            margin: 0 auto;   
+            width: 100%;
+            text-align: center;
+            height: 5%;
+
+            ul {
+                list-style: none;
+                display: inline;   
+                background-color: transparent;            
+
+                li {
+                    display: inline;
+                    i {
+                        color: black;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        nav {
+            min-height: 95%;
+            background-color: rgba(170, 170, 170, 0.6);
+            width: 100%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 4em;
+            }
+
+            menu {
+                min-height: 100%;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+
+                ul {
+                    min-height: 100%;
+                    list-style-type: none;
+                    padding: 0;
+                }
             }
         }
     }

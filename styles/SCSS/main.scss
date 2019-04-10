@@ -3,9 +3,13 @@
 @import 'sectionTwo';
 @import 'sectionThree';
 @import 'sectionFour';
-@import 'sectionFive';
-@import 'sectionSix';
+@import 'video';
 
+html,
+body{
+    height:100%;
+    overflow-x: hidden;
+}
 
 
 .section{
@@ -19,3 +23,29 @@
 }
 
 // font-family: 'Permanent Marker', cursive;
+
+body::-webkit-srollbar{
+    width: 10px;
+}
+
+
+// media queries
+//  phone
+@media only screen and (max-width:768px){
+
+}
+// tablet
+@media only screen and (min-width:769px) and(max-width:991px){
+
+}
+
+
+// small monitor
+@media only screen and (min-width:992px) and(max-width:1199px){
+
+}
+
+// large monitor
+@media only screen and (min-width:1200px){
+
+}
