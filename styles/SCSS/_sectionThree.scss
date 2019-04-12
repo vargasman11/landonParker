@@ -1,10 +1,14 @@
 #sectionThree {
-    background-image: url(img/landon-3.jpg);
+    background-image: url(/img/landon-3.jpg);
     overflow: hidden;
 
     h1 {
-        color: white;
+        color: black;
         text-align: center;
+        font-family: $header-font;
+        font-size: 4em;        
+        letter-spacing: 2.5px;
+
     }
 
     #table-wrapper {
@@ -24,12 +28,13 @@
             th{
                 color:white;
                 text-align: center;
+                font-family: $header-font;
             }
 
             tr{
                 text-align: center;
                 td{
-
+                    font-family: $secondary-font;
                 }
             }
         }

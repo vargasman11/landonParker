@@ -1,5 +1,5 @@
 #sectionFour {
-    background-image: url(img/landon-6.jpg);
+    background-image: url(/img/landon-6.jpg);
     background-position: right top;
     display: flex;
     justify-content: center;
@@ -10,6 +10,10 @@
         align-self: flex-start;
         margin: 0 auto;
         padding-bottom: 2%;
+        font-family: $header-font;
+        font-size: 4em;
+        letter-spacing: 2.5px;
+
     }
 
     #about-wrapper {
@@ -31,5 +35,41 @@
             }
         }
         
+    }
+}
+
+//  phone
+@media only screen and (max-width:768px){
+    #sectionFour {
+        padding: 0;
+        margin: 0 !important;
+    
+        h1 {
+            color: white;
+            align-self: flex-start;
+            margin: 0 auto;
+            padding-bottom: 2%;
+        }
+    
+        #about-wrapper {
+            background-color: $transparent-gray;
+            width: 80%;
+            height: 70%;
+            align-self: flex-end;
+            margin-bottom: 5%;
+            padding: 1%;
+            border-radius: 10px;
+    
+            #inner-about {
+                overflow-y: scroll;
+                height: 100%;
+    
+                p {
+                    color: white;
+                    line-height: 1.8;
+                }
+            }
+            
+        }
     }
 }

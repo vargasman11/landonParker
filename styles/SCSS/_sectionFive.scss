@@ -1,0 +1,108 @@
+#sectionFive{
+    background-image: url(/img/landon-5.jpg);
+    margin: 0 !important;
+    overflow: hidden;
+    h1{
+        color: white;
+        text-align: center;
+        font-family: $header-font;
+        font-size: 4em;
+        letter-spacing: 2.5px;
+    }
+    h3{
+        font-family: $secondary-font;
+        color:white;
+        font-size: 3em;
+        text-align: center;
+        font-weight: 200;
+    }
+    #music-wrapper{
+         display: flex;
+         align-content: center !important;     
+         height: 80%;    
+         
+        ul{
+            align-self: center;
+           margin: 0 auto !important;
+           padding: 0;     
+           display: flex;   
+           align-content: space-between;     
+           height: 50%;
+           width: 100%;
+           list-style: none;
+            li{
+                margin:1% 5%;
+                max-height: 100px;
+                overflow: hidden;
+                align-self: center;
+                iframe{         
+                           
+                }
+            }
+        }
+
+    }
+}
+
+
+// media queries
+//  phone
+@media only screen and (max-width:768px){
+    #sectionFive{
+        
+        h1{
+    
+        }
+        #music-wrapper{
+             display: flex;             
+             height: 90%;    
+             
+            ul{
+               margin: 0 auto !important;
+               padding: 0;     
+               display: flex;
+               flex-direction: column;   
+               width: 100%;
+                li{
+                    // margin:5% 5%;
+                    max-height: 80px;
+                    overflow: hidden;
+                    align-self: center;
+                    iframe{         
+                             
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+// tablet
+@media only screen and (min-width:769px) and(max-width:991px){
+    #sectionFive{        
+        h1{    
+        }
+        #music-wrapper{
+              
+             
+            ul{
+               margin: 0 auto !important;
+               padding: 0;     
+               display: flex;
+               flex-direction: column;   
+               width: 100%;
+                li{
+                    // margin:5% 5%;
+                    max-height: 100px !important;
+                    overflow: hidden;
+                    align-self: center;
+                    iframe{         
+                             
+                    }
+                }
+            }
+    
+        }
+    }
+}

@@ -1,5 +1,5 @@
 #sectionOne {
-    background-image: url(img/landon-1.jpg);
+    background-image: url(/img/landon-1.jpg);
 
     .socials {
         position: fixed;
@@ -16,9 +16,33 @@
             li {
                 padding: 10px 15px;
 
-                i {
-                    color: #fff;
-                    font-size: 3em;
+                a {
+                    i {
+                        color: #fff;
+                        font-size: 3em;
+                        transition: all .2s ease-in-out;
+                    }
+                    i:hover{
+                        transform: scale(1.2);
+                    }
+                    .fa-instagram:hover{
+                        color:#ffc838;
+                    }
+                    .fa-twitter:hover{
+                        color:#1DA1F2;
+                    }
+                    .fa-facebook:hover{
+                        color: #3C5A99;
+                    }                    
+                    .fa-snapchat-ghost:hover{
+                        color: #FFFC00;
+                    }
+                    .fa-spotify:hover{
+                        color: #1DB954;
+                    }
+                    .fa-youtube:hover{
+                        color: #FF0000;
+                    }
                 }
             }
         }
@@ -35,8 +59,9 @@
 
         h1 {
             text-align: center;
-            font-family: 'Permanent Marker', cursive;
+            font-family: $header-font;
             font-size: 4em;
+
         }
 
         menu {
@@ -49,6 +74,13 @@
                 min-height: 100%;
                 list-style-type: none;
                 padding: 0;
+                font-family: $secondary-font;
+
+                li {
+                    font-size: 2em;
+                    padding: 10px 0;
+                    color: white;
+                }
             }
         }
     }
@@ -60,24 +92,45 @@
     #sectionOne {
         .socials {
             position: relative;
-            top: 0;    
-            transform: translate(0);     
-            margin: 0 auto;   
+            top: 0;
+            transform: translate(0);
+            margin: 0 auto;
             width: 100%;
             text-align: center;
             height: 5%;
-
+            background-color: $transparent-gray;
             ul {
                 list-style: none;
-                display: inline;   
-                background-color: transparent;            
+                display: inline;
+                background-color: transparent;
 
                 li {
                     display: inline;
+                    a{
                     i {
+                        padding-top: 5px;
                         color: black;
-                        font-size: 15px;
+                        font-size: 25px;
                     }
+                    .fa-instagram{
+                        color:#ffc838;
+                    }
+                    .fa-twitter{
+                        color:#1DA1F2;
+                    }
+                    .fa-facebook{
+                        color: #3C5A99;
+                    }                    
+                    .fa-snapchat-ghost{
+                        color: #FFFC00;
+                    }
+                    .fa-spotify{
+                        color: #1DB954;
+                    }
+                    .fa-youtube{
+                        color: #FF0000;
+                    }
+                }
                 }
             }
         }

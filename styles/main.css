@@ -1,5 +1,5 @@
 #sectionOne {
-  background-image: url(img/landon-1.jpg); }
+  background-image: url(/img/landon-1.jpg); }
   #sectionOne .socials {
     position: fixed;
     top: 50%;
@@ -12,9 +12,24 @@
       background-color: rgba(170, 170, 170, 0.8); }
       #sectionOne .socials ul li {
         padding: 10px 15px; }
-        #sectionOne .socials ul li i {
+        #sectionOne .socials ul li a i {
           color: #fff;
-          font-size: 3em; }
+          font-size: 3em;
+          transition: all .2s ease-in-out; }
+        #sectionOne .socials ul li a i:hover {
+          transform: scale(1.2); }
+        #sectionOne .socials ul li a .fa-instagram:hover {
+          color: #ffc838; }
+        #sectionOne .socials ul li a .fa-twitter:hover {
+          color: #1DA1F2; }
+        #sectionOne .socials ul li a .fa-facebook:hover {
+          color: #3C5A99; }
+        #sectionOne .socials ul li a .fa-snapchat-ghost:hover {
+          color: #FFFC00; }
+        #sectionOne .socials ul li a .fa-spotify:hover {
+          color: #1DB954; }
+        #sectionOne .socials ul li a .fa-youtube:hover {
+          color: #FF0000; }
   #sectionOne nav {
     min-height: 100%;
     background-color: rgba(170, 170, 170, 0.6);
@@ -25,7 +40,7 @@
     justify-content: center; }
     #sectionOne nav h1 {
       text-align: center;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       font-size: 4em; }
     #sectionOne nav menu {
       min-height: 100%;
@@ -35,7 +50,12 @@
       #sectionOne nav menu ul {
         min-height: 100%;
         list-style-type: none;
-        padding: 0; }
+        padding: 0;
+        font-family: "Acme", sans-serif; }
+        #sectionOne nav menu ul li {
+          font-size: 2em;
+          padding: 10px 0;
+          color: white; }
 
 @media only screen and (max-width: 768px) {
   #sectionOne .socials {
@@ -45,16 +65,30 @@
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    height: 5%; }
+    height: 5%;
+    background-color: rgba(170, 170, 170, 0.8); }
     #sectionOne .socials ul {
       list-style: none;
       display: inline;
       background-color: transparent; }
       #sectionOne .socials ul li {
         display: inline; }
-        #sectionOne .socials ul li i {
+        #sectionOne .socials ul li a i {
+          padding-top: 5px;
           color: black;
-          font-size: 15px; }
+          font-size: 25px; }
+        #sectionOne .socials ul li a .fa-instagram {
+          color: #ffc838; }
+        #sectionOne .socials ul li a .fa-twitter {
+          color: #1DA1F2; }
+        #sectionOne .socials ul li a .fa-facebook {
+          color: #3C5A99; }
+        #sectionOne .socials ul li a .fa-snapchat-ghost {
+          color: #FFFC00; }
+        #sectionOne .socials ul li a .fa-spotify {
+          color: #1DB954; }
+        #sectionOne .socials ul li a .fa-youtube {
+          color: #FF0000; }
   #sectionOne nav {
     min-height: 95%;
     background-color: rgba(170, 170, 170, 0.6);
@@ -78,7 +112,7 @@
         padding: 0; } }
 
 #sectionTwo {
-  background-image: url(img/landon-2.jpg);
+  background-image: url(/img/landon-2.jpg);
   background-position: center top; }
   #sectionTwo .container {
     width: 50%;
@@ -90,7 +124,13 @@
     justify-content: space-evenly; }
     #sectionTwo #left h1 {
       color: white;
-      text-align: center; }
+      text-align: center;
+      font-family: "Permanent Marker", cursive;
+      padding-top: 25px; }
+      #sectionTwo #left h1 #under-header {
+        font-family: "Acme", sans-serif;
+        letter-spacing: 3px;
+        font-weight: 100; }
     #sectionTwo #left ul {
       list-style: none;
       margin-left: 15%; }
@@ -116,13 +156,15 @@
       float: left;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
+      justify-content: center;
+      align-items: center; }
       #sectionTwo #left h1 {
         color: white;
         text-align: center; }
       #sectionTwo #left ul {
+        margin: 0;
         list-style: none;
-        margin: 0 auto; }
+        padding: 0; }
         #sectionTwo #left ul li {
           padding: 10px 0; }
     #sectionTwo #right {
@@ -135,12 +177,20 @@
         border-radius: 15px;
         height: 50%; } }
 
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  #sectionTwo #right img {
+    border-radius: 15px;
+    height: 45%; } }
+
 #sectionThree {
-  background-image: url(img/landon-3.jpg);
+  background-image: url(/img/landon-3.jpg);
   overflow: hidden; }
   #sectionThree h1 {
-    color: white;
-    text-align: center; }
+    color: black;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 4em;
+    letter-spacing: 2.5px; }
   #sectionThree #table-wrapper {
     position: relative;
     height: 75%;
@@ -154,9 +204,12 @@
       border-radius: 10px; }
       #sectionThree #table-wrapper table th {
         color: white;
-        text-align: center; }
+        text-align: center;
+        font-family: "Permanent Marker", cursive; }
       #sectionThree #table-wrapper table tr {
         text-align: center; }
+        #sectionThree #table-wrapper table tr td {
+          font-family: "Acme", sans-serif; }
 
 @media only screen and (max-width: 768px) {
   #sectionThree {
@@ -184,7 +237,7 @@
           text-align: center; } }
 
 #sectionFour {
-  background-image: url(img/landon-6.jpg);
+  background-image: url(/img/landon-6.jpg);
   background-position: right top;
   display: flex;
   justify-content: center;
@@ -193,7 +246,10 @@
     color: white;
     align-self: flex-start;
     margin: 0 auto;
-    padding-bottom: 2%; }
+    padding-bottom: 2%;
+    font-family: "Permanent Marker", cursive;
+    font-size: 4em;
+    letter-spacing: 2.5px; }
   #sectionFour #about-wrapper {
     background-color: rgba(170, 170, 170, 0.8);
     width: 80%;
@@ -209,9 +265,99 @@
         color: white;
         line-height: 1.8; }
 
+@media only screen and (max-width: 768px) {
+  #sectionFour {
+    padding: 0;
+    margin: 0 !important; }
+    #sectionFour h1 {
+      color: white;
+      align-self: flex-start;
+      margin: 0 auto;
+      padding-bottom: 2%; }
+    #sectionFour #about-wrapper {
+      background-color: rgba(170, 170, 170, 0.8);
+      width: 80%;
+      height: 70%;
+      align-self: flex-end;
+      margin-bottom: 5%;
+      padding: 1%;
+      border-radius: 10px; }
+      #sectionFour #about-wrapper #inner-about {
+        overflow-y: scroll;
+        height: 100%; }
+        #sectionFour #about-wrapper #inner-about p {
+          color: white;
+          line-height: 1.8; } }
+
+#sectionFive {
+  background-image: url(/img/landon-5.jpg);
+  margin: 0 !important;
+  overflow: hidden; }
+  #sectionFive h1 {
+    color: white;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 4em;
+    letter-spacing: 2.5px; }
+  #sectionFive h3 {
+    font-family: "Acme", sans-serif;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 200; }
+  #sectionFive #music-wrapper {
+    display: flex;
+    align-content: center !important;
+    height: 80%; }
+    #sectionFive #music-wrapper ul {
+      align-self: center;
+      margin: 0 auto !important;
+      padding: 0;
+      display: flex;
+      align-content: space-between;
+      height: 50%;
+      width: 100%;
+      list-style: none; }
+      #sectionFive #music-wrapper ul li {
+        margin: 1% 5%;
+        max-height: 100px;
+        overflow: hidden;
+        align-self: center; }
+
+@media only screen and (max-width: 768px) {
+  #sectionFive #music-wrapper {
+    display: flex;
+    height: 90%; }
+    #sectionFive #music-wrapper ul {
+      margin: 0 auto !important;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      #sectionFive #music-wrapper ul li {
+        max-height: 80px;
+        overflow: hidden;
+        align-self: center; } }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  #sectionFive #music-wrapper ul {
+    margin: 0 auto !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    #sectionFive #music-wrapper ul li {
+      max-height: 100px !important;
+      overflow: hidden;
+      align-self: center; } }
+
 iframe {
   width: 100%;
   height: 100%; }
+
+@media only screen and (max-width: 768px) {
+  #video-container {
+    margin: 0 !important; } }
 
 html,
 body {
