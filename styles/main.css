@@ -368,6 +368,9 @@ body {
   background-repeat: none;
   background-size: cover; }
 
+.wow {
+  visibility: visible !important; }
+
 .ui {
   margin: 0; }
 

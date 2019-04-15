@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landon Parker | Country</title>
+    <!-- Semantic -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -15,12 +17,9 @@
     <!-- font header -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- font secondary -->
-    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">  
+      <!-- onscroll library -->
+    <link rel="stylesheet" href="css/animate.css"> 
 
 </head>
 
@@ -31,8 +30,8 @@
     <!-- ======================================================================= -->
 
     <div class="fluid container section" id="sectionOne">
-        <div class="socials">
-            <ul class="social-icons">
+        <div class="socials" data-aos="fade-up">
+            <ul class="social-icons animated bounce">
                 <li class=""><a href="https://www.instagram.com/landonparker/" target="_blank"><i
                             class="fab fa-instagram"></i></a></li>
                 <li> <a href="https://www.facebook.com/Landon-Parker-123022997765741/" target="_blank"><i
@@ -47,8 +46,8 @@
             </ul>
         </div>
         <nav>
-            <h1>Landon <br> Parker</h1>
-            <menu>
+            <h1 class="animated bounceInLeft">Landon <br> Parker</h1>
+            <menu class="animated bounceInRight">
                 <ul>
                     <li>Music</li>
                     <li>Shows</li>
@@ -64,7 +63,7 @@
     <!-- ======================================================================= -->
     <div class="ui fluid container section" id="sectionTwo">
         <div class="container" id="left">
-            <h1><span>Kenita's Memory</span><br><span id="under-header">Available Now</span></h1>
+            <h1 data-aos="fade-right"><span>Kenita's Memory</span><br><span id="under-header">Available Now</span></h1>
             <!-- <h1>Kenita's Memory</h1> -->
             <ul>
                 <li><img src="img/icons-logos/amazon-music.png" alt=""></li>
@@ -285,7 +284,7 @@
     <!--                                  video                                  -->
     <!-- ----------------------------------------------------------------------- -->
     <div class="ui fluid container section" id="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pqq6IKUYEAI?controls=0&autoplay=1&mute=1"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pqq6IKUYEAI?controls=0&autoplay=1&mute=0"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
@@ -331,17 +330,12 @@
                         allowtransparency="true" allow="encrypted-media"></iframe></li>
             </ul>
 
-
-
-
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <script type="text/javascript">
-        AOS.init({
-            duration:1200,
-        });
-    </script>
+      <!-- onscroll -->
+      <script src="js/wow.js"></script>
+      <script>
+      </script>
 </body>
 
 </html>
