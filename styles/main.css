@@ -213,7 +213,6 @@
 
 @media only screen and (max-width: 768px) {
   #sectionThree {
-    background-image: url(/img/landon-3.jpg);
     overflow: hidden;
     margin: 0 !important; }
     #sectionThree h1 {
