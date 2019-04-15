@@ -1,5 +1,5 @@
 #sectionOne {
-  background-image: url(/img/landon-1.jpg); }
+  background-image: url(./img/landon-1.jpg); }
   #sectionOne .socials {
     position: fixed;
     top: 50%;
@@ -112,7 +112,7 @@
         padding: 0; } }
 
 #sectionTwo {
-  background-image: url(/img/landon-2.jpg);
+  background-image: url(./img/landon-2.jpg);
   background-position: center top; }
   #sectionTwo .container {
     width: 50%;
@@ -183,7 +183,7 @@
     height: 45%; } }
 
 #sectionThree {
-  background-image: url(/img/landon-3.jpg);
+  background-image: url(./img/landon-3.jpg);
   overflow: hidden; }
   #sectionThree h1 {
     color: black;
@@ -237,7 +237,7 @@
           text-align: center; } }
 
 #sectionFour {
-  background-image: url(/img/landon-6.jpg);
+  background-image: url(./img/landon-6.jpg);
   background-position: right top;
   display: flex;
   justify-content: center;
